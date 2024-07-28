@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Write a Pascal's Triangle Function"""
 
 
 def pascal_triangle(n):
@@ -8,12 +9,11 @@ def pascal_triangle(n):
     i = 1
     if n <= 0:
         return triangle
-    
     while i <= n:
         if i == 1:
             triangle.append([1])
         if i == 2:
-            triangle.append([1,1])
+            triangle.append([1, 1])
         if i > 2:
             len_of_prev_result = len(triangle[i - 2])
             j = 0
